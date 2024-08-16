@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contents">
+
+        <div class="header">
+            <p>Rock Paper Scissor Game</p>
+        </div>
+
+        <div class="btns">
+
+            <div class="rock-btn">
+                <button id="rock" onclick="func('rock')">Rock</button>
+            </div>
+            <div class="paper-btn">
+                <button id="paper" onclick="func('paper')">Paper</button>
+            </div>
+            <div class="scissor-btn">
+                <button id="scissor" onclick="func('scissor')">Scissor</button>
+            </div>
+
+        </div>
+
+        <div class="scoreBoard">
+            <div class="display-result">
+                <p id="show-result">Play</p>
+            </div>
+            <div class="scores-text">
+                <p>Scores</p>
+            </div>
+
+            <div class="scores" style="font-size: large;">
+
+                <div class="user">
+                    <p>
+                        User
+                    </p>
+                    <p id="user-score">0</p>
+                </div>
+                <div class="computer">
+                    <p>Computer</p>
+                    <p id="computer-score">0</p>
+                </div>
+                <div class="tie">
+                    <p>Tie</p>
+                    <p id="tie-score">0</p>
+                </div>
+
+            </div>
+
+
+            <div class="savepoint-class">
+                <button class="savepoint" onclick="viewScore()">Save Point</button>
+                <button class="reset-btn" onclick="reset()">Reset</button>
+
+            </div>
+            <p id="savepoint-text"></p>
+
+        </div>
+    </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
